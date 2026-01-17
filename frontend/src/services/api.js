@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://sales-crm-system.onrender.com/api"
+  baseURL: " https://sales-crm-system.onrender.com"
 
 });
 
