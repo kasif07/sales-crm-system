@@ -17,6 +17,13 @@ function Dashboard() {
     };
     fetchData();
   }, []);
+useEffect(() => {
+  const token = localStorage.getItem("token");
+  if (!token) {
+    window.location.href = "/";
+  }
+}, []);
+
 
   const logout = () => {
     localStorage.removeItem("token");
